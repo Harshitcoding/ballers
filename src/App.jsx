@@ -14,7 +14,6 @@ import Join from './component/Join'
 import ChooseBallers from './component/ChooseBallers'
 import Contribute from './component/philantrophy/Contribute'
 import Howitworks from './component/philantrophy/Howitworks'
-import AboutUs from './component/aboutus/aboutus'
 
 export default function App() {
   return (
@@ -45,7 +44,6 @@ export default function App() {
             <Ourimpact/>
             </>} />
           <Route path="/dashboard" element={<div>Dashboard Page</div>} />
-          <Route path='/about' element={<AboutUs/>}/>
 
         </Routes>
       </div>
