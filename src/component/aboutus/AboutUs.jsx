@@ -1,7 +1,6 @@
 import Lottie from 'lottie-react';
 import React from 'react';
 import about from '../../assets/about.json';
-import TranscendGame from './TranscendGame';
 
 const AboutUs = () => {
   return (
@@ -16,9 +15,9 @@ const AboutUs = () => {
       {/* Main Content */}
       <main className="relative z-10 max-w-4xl w-full text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-8 leading-relaxed">
-          For the ones who do more
-          <br />
-          than just play the game.
+        Beyond the Game: Invest in        
+        <br />
+         Sports. Support Champions.
         </h1>
 
         <button 

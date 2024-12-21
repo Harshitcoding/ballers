@@ -1,13 +1,14 @@
-/* In your CSS file */
+/* Tailwind base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Apply gradient background and global styles */
 body {
   @apply bg-gradient-to-r from-[#0E1629] to-[#000000] text-white italic overflow-x-hidden;
 }
 
-/* For webkit browsers */
+/* Hide scrollbars for webkit browsers */
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
@@ -15,4 +16,16 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: transparent;
+}
+
+/* Ensure horizontal scroll is disabled globally */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Additional safety for small devices using media queries */
+@media (max-width: 640px) {
+  html, body {
+    overflow-x: hidden;
+  }
 }
