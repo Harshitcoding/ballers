@@ -1,0 +1,18 @@
+/* In your CSS file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-r from-[#0E1629] to-[#000000] text-white italic ;
+}
+
+/* For webkit browsers */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
