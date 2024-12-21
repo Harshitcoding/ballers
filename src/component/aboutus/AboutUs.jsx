@@ -22,9 +22,9 @@ const AboutUs = () => {
         </h1>
 
         <button 
-          className="bg-white text-gray-900 px-8 py-3 rounded-sm 
+          className="bg-white px-8 py-3 rounded-sm 
                      hover:bg-gray-100 transition-colors duration-200
-                     text-lg font-medium italic"
+                     text-lg font-medium italic bg-gradient-to-r from-[#873C0F] to-[#0A041A] text-white"
         >
           Join the exclusive club
         </button>

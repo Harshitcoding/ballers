@@ -2,7 +2,7 @@
 import { useRef } from 'react'
 import Lottie from 'lottie-react'
 import { motion, useInView } from 'framer-motion'
-import networking from '../assets/networking.json'
+import rich from '../assets/rich.json'
 
 const FADE_IN_VARIANTS = {
   hidden: { opacity: 0, y: 20 },
@@ -23,6 +23,9 @@ const Getstarted = () => {
       ref={ref} 
       className="bg-gradient-to-r from-[#0E1629] to-[#000000] py-24 px-4 sm:px-6 lg:px-8"
     >
+      <div className="max-w-7xl mx-auto">
+       
+
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 lg:space-x-12">
           <motion.div 
             className="lg:w-1/2"
@@ -34,7 +37,7 @@ const Getstarted = () => {
           >
             <div className="rounded-2xl p-8 shadow-2xl border border-purple-500 border-opacity-20 mb-10">
               <h3 className="mb-5 text-4xl text-[#FFbF00]">
-                Get invented
+                Get Started
               </h3>
               <h4 className="mb-5 text-xl">
                 Beyond just Exclusive
@@ -62,12 +65,13 @@ const Getstarted = () => {
             custom="right"
           >
             <Lottie
-              animationData={networking}
+              animationData={rich}
               loop={false}
               className="w-full h-auto max-w-md mx-auto"
             />
           </motion.div>
         </div>
+      </div>
     </section>
   )
 }

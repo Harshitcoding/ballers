@@ -36,12 +36,12 @@ const Contribute = () => {
         >
           <h2 className="text-6xl font-bold mb-4">
             <span className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500 bg-clip-text text-transparent">
-              DARE TO DREAM?
+                BACK A WINNER
             </span>
           </h2>
           <h2 className="text-6xl font-bold">
             <span className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500 bg-clip-text text-transparent">
-              DARE TO JOIN!
+              CREATE A LEGEND
             </span>
           </h2>
         </motion.div>
