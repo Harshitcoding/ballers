@@ -114,8 +114,8 @@ const Navbar = () => {
               <NavItem 
                 Icon={DollarSign} 
                 label="Investment" 
-                to="/investment"
-                isActive={location.pathname === '/investment'}
+                to="/"
+                isActive={location.pathname === '/'}
                 onClick={handleInvestmentClick}
               />
             )}
