@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-r from-[#0E1629] to-[#000000] text-white italic ;
+  @apply bg-gradient-to-r from-[#0E1629] to-[#000000] text-white italic overflow-x-hidden;
 }
 
 /* For webkit browsers */
