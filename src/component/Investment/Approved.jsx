@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import Lottie from 'lottie-react';
 import { motion, useInView } from 'framer-motion';
-import approved from '../assets/approved.json';
+import approved from '../../assets/approved.json';
 
 const FADE_IN_VARIANTS = {
   hidden: { opacity: 0, y: 20 },

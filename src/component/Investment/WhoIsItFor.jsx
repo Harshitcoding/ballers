@@ -135,7 +135,7 @@ export default function WhoIsItFor() {
                   animate={{ opacity: leftInView ? 1 : 0, y: leftInView ? 0 : 20 }}
                   transition={{ duration: 0.8, delay: 0.8 }}
                 >
-                  This platform is tailored for Ultra-High-Net-Worth
+                 Where Passion Meets Prestige
                 </motion.p>
                 <motion.p 
                   className="text-lg sm:text-xl text-gray-400/90 leading-relaxed"
@@ -143,10 +143,7 @@ export default function WhoIsItFor() {
                   animate={{ opacity: leftInView ? 1 : 0, y: leftInView ? 0 : 20 }}
                   transition={{ duration: 0.8, delay: 1 }}
                 >
-                  Individuals (UHNIs) and Family Offices who aspire to be
-                  part of a passionate and luxurious lifestyle built around
-                  sports and are looking for more than just buying and
-                  selling sports assets.
+                 For those with a $5M+ net worth who see sports as more than a game. It’s about exclusive experiences, deeper connections, and elevating passion into a lifestyle.
                 </motion.p>
               </div>
 

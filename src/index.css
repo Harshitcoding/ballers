@@ -5,7 +5,7 @@
 
 /* Apply gradient background and global styles */
 body {
-  @apply bg-gradient-to-r from-[#0E1629] to-[#000000] text-white italic overflow-x-hidden;
+  @apply bg-gradient-to-r from-[#0E1629] to-[#000000] text-white font-serif overflow-x-hidden leading-relaxed;
 }
 
 /* Hide scrollbars for webkit browsers */

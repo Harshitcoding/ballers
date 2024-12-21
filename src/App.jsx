@@ -1,21 +1,21 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Approved from "./component/Approved"
-import Getstarted from "./component/Getstarted"
-import Landing from "./component/Landing"
+import Getstarted from "./component/Investment/Getstarted"
 import Navbar from "./component/Navbar"
-import SportsLeagues from "./component/Sportsleague"
-import WhyBallers from "./component/WhyBallers"
-import Work from "./component/Work"
-import WhoIsItFor from './component/WhoIsItFor'
+import WhyBallers from "./component/Investment/WhyBallers"
+import WhoIsItFor from './component/Investment/WhoIsItFor'
 import Footer from './component/Footer'
 import Philanthropy from './component/philantrophy/Philantrophy'
 import Ourimpact from './component/philantrophy/Ourimpact'
-import Join from './component/Join'
-import ChooseBallers from './component/ChooseBallers'
+import Join from './component/Investment/Join'
+import ChooseBallers from './component/Investment/ChooseBallers'
 import Contribute from './component/philantrophy/Contribute'
 import Howitworks from './component/philantrophy/Howitworks'
 import TranscendGame from './component/aboutus/TranscendGame'
 import AboutUs from './component/aboutus/AboutUs'
+import Landing from './component/Investment/Landing'
+import SportsLeagues from './component/Investment/Sportsleague'
+import Work from './component/Investment/Work'
+import Approved from './component/Investment/Approved'
 
 export default function App() {
   return (

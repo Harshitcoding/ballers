@@ -2,7 +2,7 @@
 import { useRef } from 'react'
 import Lottie from 'lottie-react'
 import { motion, useInView } from 'framer-motion'
-import rich from '../assets/rich.json'
+import networking from '../../assets/networking.json'
 
 const FADE_IN_VARIANTS = {
   hidden: { opacity: 0, y: 20 },
@@ -14,7 +14,7 @@ const SLIDE_VARIANTS = {
   visible: { opacity: 1, x: 0 }
 }
 
-const Getstarted = () => {
+const Work = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
 
@@ -24,7 +24,19 @@ const Getstarted = () => {
       className="bg-gradient-to-r from-[#0E1629] to-[#000000] py-24 px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-7xl mx-auto">
-       
+        <motion.h2 
+          className="text-4xl md:text-5xl lg:text-6xl font-thin text-center mb-14"
+          variants={FADE_IN_VARIANTS}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ duration: 0.5 }}
+        >
+          <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+    How it works
+  </span>
+  <div className="w-40 h-px mx-auto bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent mt-4" />
+
+        </motion.h2>
 
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 lg:space-x-12">
           <motion.div 
@@ -37,7 +49,7 @@ const Getstarted = () => {
           >
             <div className="rounded-2xl p-8 shadow-2xl border border-purple-500 border-opacity-20 mb-10">
               <h3 className="mb-5 text-4xl text-[#FFbF00]">
-                Get Started
+                Get invented
               </h3>
               <h4 className="mb-5 text-xl">
                 Beyond just Exclusive
@@ -65,7 +77,7 @@ const Getstarted = () => {
             custom="right"
           >
             <Lottie
-              animationData={rich}
+              animationData={networking}
               loop={false}
               className="w-full h-auto max-w-md mx-auto"
             />
@@ -76,4 +88,4 @@ const Getstarted = () => {
   )
 }
 
-export default Getstarted
+export default Work

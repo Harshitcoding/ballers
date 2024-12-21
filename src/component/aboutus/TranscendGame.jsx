@@ -1,68 +1,93 @@
 import React from 'react';
-import { Star, Sparkles, PlaneTakeoff } from 'lucide-react';
+import { Star, Crown, Shield } from 'lucide-react';
 
 const TranscendGame = () => {
   return (
-    <div className="relative min-h-screen  text-white overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-purple-900/20 via-transparent to-amber-900/10" />
-        <div className="absolute top-20 left-20 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl animate-pulse delay-1000" />
-      </div>
-
-      {/* Decorative Border */}
-      <div className="absolute inset-0 border-8 border-amber-500/10 m-4 pointer-events-none" />
+    <div className="relative min-h-screen bg-[#1A1814] text-[#D5C5A3] overflow-hidden font-serif">
+      {/* Subtle texture overlay */}
+      <div className="absolute inset-0 bg-[url('/noise.png')] opacity-5 mix-blend-overlay" />
+      
+      {/* Inner border */}
+      <div className="absolute inset-8 border border-[#937341]/20" />
+      
+      {/* Corner ornaments */}
+      <div className="absolute top-6 left-6 w-16 h-16 border-t border-l border-[#937341]/40" />
+      <div className="absolute top-6 right-6 w-16 h-16 border-t border-r border-[#937341]/40" />
+      <div className="absolute bottom-6 left-6 w-16 h-16 border-b border-l border-[#937341]/40" />
+      <div className="absolute bottom-6 right-6 w-16 h-16 border-b border-r border-[#937341]/40" />
 
       {/* Main Content Container */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 md:py-24">
-        {/* Header Logo */}
-        <div className="flex justify-between items-center mb-16">
-          <PlaneTakeoff className="w-8 h-8 text-amber-400" />
-          <button className="px-6 py-2 border border-amber-400/30 rounded-full text-amber-400 hover:bg-amber-400/10 transition-colors duration-300">
-            Join Now
+      <div className="relative z-10 max-w-7xl mx-auto px-8 py-16 md:py-24">
+        {/* Header */}
+        <div className="flex justify-between items-center mb-24">
+          <div className="flex items-center gap-2">
+            <Shield className="w-6 h-6 text-[#937341]" />
+            <span className="text-lg tracking-[0.2em] text-[#937341]">BALLERS</span>
+          </div>
+          <button className="px-8 py-3 border border-[#937341] text-[#937341] hover:bg-[#937341]/10 transition-colors duration-300 tracking-widest text-sm">
+            REQUEST ACCESS
           </button>
         </div>
 
         {/* Hero Section */}
-        <div className="space-y-16 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-amber-200 via-amber-400 to-amber-200 bg-clip-text text-transparent animate-gradient">
-            How do you transcend the game?
-          </h1>
+        <div className="space-y-20 text-center">
+          <div className="space-y-2">
+            <p className="text-[#937341] tracking-[0.3em] text-sm">DISTINCTION IN SPORT</p>
+            <h1 className="text-4xl md:text-6xl font-light tracking-wider text-white/90 mt-6">
+              How Do You Transcend
+              <span className="block mt-4">the Game?</span>
+            </h1>
+          </div>
 
-          <p className="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-            By expanding beyond the field. Sports no longer exists just within the confines of a stadium, it has evolved into a lifestyle and a lucrative opportunity for those with the means.
+          <p className="text-lg md:text-xl text-[#937341] max-w-3xl mx-auto leading-relaxed font-light">
+            By elevating beyond the conventional. Sports has evolved beyond mere competition—it has become the hallmark of sophisticated investment and refined lifestyle.
           </p>
 
           {/* Feature Blocks */}
-          <div className="grid md:grid-cols-2 gap-8 text-left mt-16">
-            <div className="p-8 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:border-amber-400/30 transition-colors duration-300">
-              <Sparkles className="w-8 h-8 text-amber-400 mb-4" />
-              <h3 className="text-2xl font-semibold mb-4">Elite Experience</h3>
-              <p className="text-gray-400">That is what Ballers aims to unlock – the best of sports for the world's best.</p>
+          <div className="grid md:grid-cols-2 gap-12 text-left mt-24">
+            <div className="p-12 border border-[#937341]/20 hover:border-[#937341]/40 transition-colors duration-500">
+              <Crown className="w-8 h-8 text-[#937341] mb-8" />
+              <h3 className="text-2xl font-light tracking-wide text-white/90 mb-4">Elite Heritage</h3>
+              <p className="text-[#937341] leading-relaxed">
+                Ballers presents an unparalleled experience—cultivating the finest aspects of sport for the world's most discerning individuals.
+              </p>
             </div>
             
-            <div className="p-8 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:border-amber-400/30 transition-colors duration-300">
-              <Star className="w-8 h-8 text-amber-400 mb-4" />
-              <h3 className="text-2xl font-semibold mb-4">Trophy Assets</h3>
-              <p className="text-gray-400">Our focus is on trophy assets, starting with sports. These are not just any assets—they're reserved for billionaires.</p>
+            <div className="p-12 border border-[#937341]/20 hover:border-[#937341]/40 transition-colors duration-500">
+              <Star className="w-8 h-8 text-[#937341] mb-8" />
+              <h3 className="text-2xl font-light tracking-wide text-white/90 mb-4">Legacy Assets</h3>
+              <p className="text-[#937341] leading-relaxed">
+                Our portfolio comprises exclusively of legacy investments—assets traditionally reserved for the most distinguished circles.
+              </p>
             </div>
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 space-y-8">
-            <p className="text-xl text-amber-400">Join us at Ballers, where we're not just playing the game;</p>
-            <p className="text-2xl font-semibold">we're creating the most elite sports experience for the world's most elite.</p>
-            <button className="mt-8 px-12 py-4 bg-gradient-to-r from-amber-400 to-amber-500 rounded-full text-black font-semibold hover:from-amber-500 hover:to-amber-600 transition-all duration-300 shadow-lg hover:shadow-amber-500/25">
-              Transcend the Ordinary
-            </button>
+          <div className="mt-24 space-y-12">
+            <div className="space-y-4">
+              <p className="text-lg text-[#937341] tracking-wide">Join us at Ballers, where excellence meets legacy;</p>
+              <p className="text-2xl font-light text-white/90 tracking-wide">
+                crafting the most distinguished sporting experience for the truly exceptional.
+              </p>
+            </div>
+            
+            <div className="flex justify-center">
+              <button className="group relative px-16 py-5 border border-[#937341] bg-transparent
+                             text-[#937341] tracking-[0.2em] text-sm
+                             transition-all duration-500 overflow-hidden
+                             hover:text-white/90">
+                <span className="relative z-10">TRANSCEND THE ORDINARY</span>
+                <div className="absolute inset-0 bg-[#937341] transform -translate-x-full 
+                              group-hover:translate-x-0 transition-transform duration-500" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Decorative Corner Elements */}
-      <div className="absolute bottom-4 right-4 w-24 h-24 border-r-2 border-b-2 border-amber-400/30" />
-      <div className="absolute top-4 left-4 w-24 h-24 border-l-2 border-t-2 border-amber-400/30" />
+      {/* Vertical decorative lines */}
+      <div className="absolute left-24 top-0 w-px h-full bg-gradient-to-b from-transparent via-[#937341]/10 to-transparent" />
+      <div className="absolute right-24 top-0 w-px h-full bg-gradient-to-b from-transparent via-[#937341]/10 to-transparent" />
     </div>
   );
 };

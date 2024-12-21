@@ -2,7 +2,7 @@
 import { useRef } from 'react'
 import Lottie from 'lottie-react'
 import { motion, useInView } from 'framer-motion'
-import networking from '../assets/networking.json'
+import rich from '../../assets/rich.json'
 
 const FADE_IN_VARIANTS = {
   hidden: { opacity: 0, y: 20 },
@@ -14,7 +14,7 @@ const SLIDE_VARIANTS = {
   visible: { opacity: 1, x: 0 }
 }
 
-const Work = () => {
+const Getstarted = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
 
@@ -24,19 +24,7 @@ const Work = () => {
       className="bg-gradient-to-r from-[#0E1629] to-[#000000] py-24 px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-7xl mx-auto">
-        <motion.h2 
-          className="text-4xl md:text-5xl lg:text-6xl font-thin text-center mb-14"
-          variants={FADE_IN_VARIANTS}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          transition={{ duration: 0.5 }}
-        >
-          <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-    How it works
-  </span>
-  <div className="w-40 h-px mx-auto bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent mt-4" />
-
-        </motion.h2>
+       
 
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 lg:space-x-12">
           <motion.div 
@@ -49,21 +37,15 @@ const Work = () => {
           >
             <div className="rounded-2xl p-8 shadow-2xl border border-purple-500 border-opacity-20 mb-10">
               <h3 className="mb-5 text-4xl text-[#FFbF00]">
-                Get invented
+                Get Started
               </h3>
               <h4 className="mb-5 text-xl">
                 Beyond just Exclusive
               </h4>
               <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-                Ballers is an elite society, capped at{" "}
-                <span className="font-semibold text-[#FFbF00]">
-                  1000 individuals
-                </span>
-                —each embodying the highest standards of achievement. To gain access to this prestigious circle, you must be{" "}
-                <span className="bg-gradient-to-r from-[#0E1629] to-[#000000]">
-                  recommended by an existing member
-                </span>{" "}
-                and submit a membership application.
+              Invest in sports assets, build a portfolio,
+              access exclusive events, network with billionaires, and be part 
+              of a lifestyle that brings compounding returns to both your quality of life and wealth.
               </p>
             </div>
           </motion.div>
@@ -77,7 +59,7 @@ const Work = () => {
             custom="right"
           >
             <Lottie
-              animationData={networking}
+              animationData={rich}
               loop={false}
               className="w-full h-auto max-w-md mx-auto"
             />
@@ -88,4 +70,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default Getstarted
