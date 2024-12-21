@@ -14,8 +14,8 @@ import Join from './component/Join'
 import ChooseBallers from './component/ChooseBallers'
 import Contribute from './component/philantrophy/Contribute'
 import Howitworks from './component/philantrophy/Howitworks'
-import AboutUs from './component/aboutus/aboutus'
 import TranscendGame from './component/aboutus/TranscendGame'
+import AboutUs from './component/aboutus/AboutUs'
 
 export default function App() {
   return (
