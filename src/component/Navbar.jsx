@@ -5,7 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isPhilanthropy, setIsPhilanthropy] = useState(true) // Track the current menu state
+  const [isPhilanthropy, setIsPhilanthropy] = useState(true)
   const location = useLocation()
   const navigate = useNavigate()
 
@@ -18,12 +18,12 @@ const Navbar = () => {
   }
 
   const handlePhilanthropyClick = () => {
-    setIsPhilanthropy(false) // Replace Philanthropy with Investment
+    setIsPhilanthropy(false)
     navigate("/philanthropy")
   }
 
   const handleInvestmentClick = () => {
-    setIsPhilanthropy(true) // Show Philanthropy again
+    setIsPhilanthropy(true)
     navigate("/")
   }
 
@@ -57,7 +57,7 @@ const Navbar = () => {
               label="Philanthropy" 
               to="/philanthropy" 
               isActive={location.pathname === '/philanthropy'}
-              onClick={handlePhilanthropyClick} // Update click handler
+              onClick={handlePhilanthropyClick}
             />
           ) : (
             <NavItem 
@@ -65,7 +65,7 @@ const Navbar = () => {
               label="Investment" 
               to="/" 
               isActive={location.pathname === '/'}
-              onClick={handleInvestmentClick} // Update click handler
+              onClick={handleInvestmentClick}
             />
           )}
           <NavItem 
@@ -96,7 +96,7 @@ const Navbar = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div 
-            className="md:hidden absolute top-full left-0 right-0 bg-gradient-to-b from-amber-800 to-amber-900 py-6 px-6 space-y-4 z-50"
+            className="md:hidden absolute top-full left-0 right-0 bg-gradient-to-b from-amber-800 to-amber-900 py-6 px-6 flex flex-col gap-4"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
@@ -108,7 +108,7 @@ const Navbar = () => {
                 label="Philanthropy" 
                 to="/philanthropy"
                 isActive={location.pathname === '/philanthropy'}
-                onClick={handlePhilanthropyClick} // Update click handler
+                onClick={handlePhilanthropyClick}
               />
             ) : (
               <NavItem 
@@ -116,7 +116,7 @@ const Navbar = () => {
                 label="Investment" 
                 to="/investment"
                 isActive={location.pathname === '/investment'}
-                onClick={handleInvestmentClick} // Update click handler
+                onClick={handleInvestmentClick}
               />
             )}
             <NavItem 
@@ -147,7 +147,7 @@ const NavItem = ({ Icon, label, to, isActive, onClick }) => (
           ? 'text-yellow-300' 
           : 'text-amber-300 group-hover:text-yellow-300'
       } transition-colors duration-300`} />
-      <span className={`text-lg font-semibold tracking-wide ${
+      <span className={`text-lg font-semibold ${
         isActive 
           ? 'text-yellow-300' 
           : 'text-amber-100 group-hover:text-yellow-300'

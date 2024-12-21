@@ -34,7 +34,7 @@ const Join = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          <h2 className="text-6xl font-bold mb-4">
+          <h2 className="text-2xl font-bold mb-4">
             <span className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500 bg-clip-text text-transparent">
               DARE TO DREAM?
             </span>
