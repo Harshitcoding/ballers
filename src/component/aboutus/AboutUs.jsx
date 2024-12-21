@@ -1,6 +1,38 @@
+import Lottie from 'lottie-react';
+import React from 'react';
+import about from '../../assets/about.json';
+import TranscendGame from './TranscendGame';
+
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
-  )
-}
-export default AboutUs
+    <div className="relative min-h-screen bg-[#873C0F] flex items-center justify-center p-4 overflow-hidden">
+      {/* Background Lottie Animation */}
+      <Lottie
+        animationData={about}
+        loop={true}
+        className="absolute top-0 mt-2 left-0 w-full h-full object-cover opacity-30 pointer-events-none"
+      />
+
+      {/* Main Content */}
+      <main className="relative z-10 max-w-4xl w-full text-center">
+        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-8 leading-relaxed">
+          For the ones who do more
+          <br />
+          than just play the game.
+        </h1>
+
+        <button 
+          className="bg-white text-gray-900 px-8 py-3 rounded-sm 
+                     hover:bg-gray-100 transition-colors duration-200
+                     text-lg font-medium italic"
+        >
+          Join the exclusive club
+        </button>
+      </main>
+    </div>
+  );
+};
+
+
+
+export default AboutUs;

@@ -56,31 +56,33 @@ export default function Footer() {
               className="flex flex-wrap justify-center items-center gap-6 sm:gap-8"
             >
               <Link 
-                href="/faqs" 
+                to="/faqs" 
                 className="text-gray-400 hover:text-gray-200 transition-colors duration-300"
               >
                 FAQs
               </Link>
               <Link 
-                href="/about" 
+                to="/about" 
                 className="text-gray-400 hover:text-gray-200 transition-colors duration-300"
               >
                 About Us
               </Link>
-              <Link 
+              <a 
                 href="https://linkedin.com" 
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-[#D4AF37] transition-colors duration-300"
               >
                 <Linkedin className="w-5 h-5" />
-              </Link>
-              <Link 
+              </a>
+              <a 
                 href="https://instagram.com" 
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-[#D4AF37] transition-colors duration-300"
               >
                 <Instagram className="w-5 h-5" />
-              </Link>
+              </a>
             </motion.div>
           </div>
 
@@ -111,11 +113,11 @@ export default function Footer() {
                 <span className="hidden sm:inline">•</span>
               </div>
               <div className="flex items-center space-x-2 sm:space-x-4">
-                <Link href="/terms" className="hover:text-gray-400 transition-colors duration-300">
+                <Link to="/terms" className="hover:text-gray-400 transition-colors duration-300">
                   Terms and Conditions
                 </Link>
                 <span>•</span>
-                <Link href="/privacy" className="hover:text-gray-400 transition-colors duration-300">
+                <Link to="/privacy" className="hover:text-gray-400 transition-colors duration-300">
                   Privacy Policy
                 </Link>
               </div>
