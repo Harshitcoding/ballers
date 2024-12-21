@@ -34,13 +34,13 @@ const Join = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="lg:text-2xl md:4xl sm:2xl mb-4">
             <span className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500 bg-clip-text text-transparent">
               DARE TO DREAM?
             </span>
           </h2>
-          <h2 className="text-6xl font-bold">
-            <span className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500 bg-clip-text text-transparent">
+          <h2 className="lg:text-5xl md:4xl sm:2xl font-bold ">
+            <span className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500 bg-clip-text text-transparent ">
               DARE TO JOIN!
             </span>
           </h2>
